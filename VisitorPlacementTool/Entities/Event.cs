@@ -12,15 +12,20 @@ public class Event
 
     private readonly List<Area>? _areas = new List<Area>();
     public IReadOnlyList<Area>? Areas => _areas.AsReadOnly();
+    
+    private readonly List<Group>? _groups = new List<Group>();
+    public IReadOnlyList<Group>? Groups => _groups.AsReadOnly();
 
 
-    public Event(Guid id, string name, int amountAreas, DateTime dateTime, List<Area> areas)
+    public Event(Guid id, string name, int amountAreas, DateTime dateTime)
+    // public Event(Guid id, string name, int amountAreas, DateTime dateTime, List<Area> areas, List<Group> groups)
     {
         Id = id;
         Name = name;
         AmountAreas = amountAreas;
         DateTime = dateTime;
-        _areas = areas;
+        // _areas = areas;
+        // _groups = groups;
     }
 
 

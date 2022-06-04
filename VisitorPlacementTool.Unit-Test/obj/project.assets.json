@@ -1660,6 +1660,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "VisitorPlacementTool/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/VisitorPlacementTool.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VisitorPlacementTool.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6197,6 +6210,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "VisitorPlacementTool/1.0.0": {
+      "type": "project",
+      "path": "../VisitorPlacementTool/VisitorPlacementTool.csproj",
+      "msbuildProject": "../VisitorPlacementTool/VisitorPlacementTool.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6204,6 +6222,7 @@
       "MSTest.TestAdapter >= 2.2.8",
       "MSTest.TestFramework >= 2.2.8",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
+      "VisitorPlacementTool >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -6231,7 +6250,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool/VisitorPlacementTool.csproj": {
+              "projectPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool/VisitorPlacementTool.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6272,6 +6295,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

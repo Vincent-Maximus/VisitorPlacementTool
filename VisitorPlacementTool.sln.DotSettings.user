@@ -6,6 +6,6 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cdedaaf4_002Dc06a_002D4520_002Db849_002D9e1678abdc18/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::A88EE55B-895E-4758-9B9E-859E799433A3::.NETFramework,Version=v4.8::VisitorPlacementTool.Unit_Test.Tests&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::9F5A866C-259E-436E-A924-B028D1CE4FA7::net6.0::VisitorPlacementTool.Unit_Test.VisitorTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
