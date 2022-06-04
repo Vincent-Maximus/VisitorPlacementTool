@@ -16,6 +16,7 @@ public class VisitorTests
     [TestMethod]
     public void ChildCheck_ShouldReturnTrue()
     {
+        //This is an child
         // Dummy Data
         var child = new DateOnly(2020, 10, 19);
         var adult = new DateOnly(2000, 10, 19);
@@ -26,10 +27,13 @@ public class VisitorTests
         //Test
         Assert.IsTrue(isChild);
     }
+    
+    
     //The tests xD
     [TestMethod]
     public void ChildCheck_ShouldReturnFalse()
     {
+        //This is an adult
         // Dummy Data
         var child = new DateOnly(2020, 10, 19);
         var adult = new DateOnly(2000, 10, 19);

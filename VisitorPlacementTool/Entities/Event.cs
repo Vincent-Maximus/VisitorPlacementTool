@@ -8,7 +8,7 @@ public class Event
     [Key] public Guid Id { get; set; } = Guid.NewGuid();
     public string? Name { get; set; }
     public int AmountAreas { get; set; }
-    public DateTime DateTime { get; set; }
+    public DateOnly Date { get; set; }
 
     private readonly List<Area>? _areas = new List<Area>();
     public IReadOnlyList<Area>? Areas => _areas.AsReadOnly();
@@ -17,16 +17,16 @@ public class Event
     public IReadOnlyList<Group>? Groups => _groups.AsReadOnly();
 
 
-    public Event(Guid id, string name, int amountAreas, DateTime dateTime)
+    public Event(Guid id, string name, int amountAreas, DateOnly date)
     // public Event(Guid id, string name, int amountAreas, DateTime dateTime, List<Area> areas, List<Group> groups)
     {
         Id = id;
         Name = name;
         AmountAreas = amountAreas;
-        DateTime = dateTime;
+        Date = date;
         // _areas = areas;
         // _groups = groups;
-    }
+    } 
 
 
     //Get all areas
@@ -34,8 +34,8 @@ public class Event
     {
         return _areas;
     }
-
-
+    
+    
     //TODO Create new area
     
     

@@ -22,4 +22,7 @@ public class Group
     
     //TODO Get Visitors
     //TODO Create Visitors
+
+
+
 }
