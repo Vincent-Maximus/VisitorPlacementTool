@@ -5,8 +5,8 @@ namespace VisitorPlacementTool.Entities;
 public class Group
 {
     [Key]
-    public Guid Id { get; set; } = Guid.NewGuid();
-    public DateTime RegisterTime { get; set; }
+    public Guid Id { get; init; } = Guid.NewGuid();
+    public DateTime RegisterTime { get; private set; }
 
     private readonly List<Visitor>? _visitors = new List<Visitor>();
     public IReadOnlyList<Visitor>? Visitors => _visitors.AsReadOnly();

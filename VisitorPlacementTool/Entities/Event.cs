@@ -5,13 +5,14 @@ namespace VisitorPlacementTool.Entities;
 
 public class Event
 {
-    [Key] public Guid Id { get; set; } = Guid.NewGuid();
-    public string? Name { get; set; }
-    public int AmountAreas { get; set; }
-    public DateOnly Date { get; set; }
+    [Key] public Guid Id { get; init; } = Guid.NewGuid();
+    public string? Name { get; private set; }
+    public int AmountAreas { get; private set; }
+    public DateOnly Date { get; private set; }
 
     private readonly List<Area>? _areas = new List<Area>();
     public IReadOnlyList<Area>? Areas => _areas.AsReadOnly();
+    
     
     private readonly List<Group>? _groups = new List<Group>();
     public IReadOnlyList<Group>? Groups => _groups.AsReadOnly();

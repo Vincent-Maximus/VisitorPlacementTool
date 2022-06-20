@@ -4,13 +4,16 @@ namespace VisitorPlacementTool.Entities;
 
 public class Area
 {
-    [Key] public Guid Id { get; set; } = Guid.NewGuid();
-    public int AreaNr { get; set; }
-    public int RowLength { get; set; }
-    public int RowNr { get; set; }
-
+    [Key] public Guid Id { get; init; } = Guid.NewGuid();
+    public int AreaNr { get; private set; }
+    public int RowLength { get; private set; }
+    public int RowNr { get; private set; }
+    
+    //interface segregation
     private readonly List<Seat>? _seats = new List<Seat>();
     public IReadOnlyList<Seat>? Seats => _seats.AsReadOnly();
+    
+    
 
     public Area(Guid id, int areaNr, int rowLength, int rowNr)
     {
