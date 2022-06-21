@@ -8,7 +8,12 @@ public class Visitor
     public string? Name { get; private set; }
     public DateOnly Birthday { get; private set; }
 
-
+    public Visitor(Guid id, string name, DateOnly birthday)
+    {
+        Id = id;
+        Name = name;
+        Birthday = birthday;
+    }
     public bool ChildCheck(DateOnly Birthday)
     {
         double birthday = (int.Parse(DateTime.Now.ToString("yyyyMMdd")) - int.Parse(Birthday.ToString("yyyyMMdd")))/10000;

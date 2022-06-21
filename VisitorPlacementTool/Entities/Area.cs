@@ -34,13 +34,12 @@ public class Area
 
         CreateSeat();
     }
-
-
+    
     //Get Seats
     public List<Seat> GetSeats()
     {
         // List<Seat> seats = new List<Seat>();
-        return _seats.Where(seat => seat.Visitors == null).ToList();
+        return _seats!.Where(seat => seat.Visitors == null).ToList();
     }
 
 
@@ -54,12 +53,12 @@ public class Area
             for (int x = 0; x < RowLength; x++)
             {
                 RowLength++;
-                _seats.Add(new Seat(new Guid(), i, x, true));
+                _seats!.Add(new Seat(new Guid(), i, x, true));
             }
         }
     }
 
-
+    
     //Populate seats
     public Group PopulateSeats(Group group, DateOnly date)
     {
@@ -68,11 +67,33 @@ public class Area
             return group;
         }
 
-        List<Seat> AvailableSeats = GetSeats();
-        List<Visitor> childeren;
-        List<Visitor> adults;
+        List<Seat> availableSeats = GetSeats();
+        List<Visitor> remainingVisitors = group.Visitors!.ToList();
+        
+        foreach (Seat seat in availableSeats)
+        {
+            //assign seat
+            if (remainingVisitors.Count != 0)
+            {
+                seat.Visitors = remainingVisitors.First();
+                remainingVisitors.RemoveAt(0);
+            }
+            else
+            {
+                break;
+            }
+        }
 
+        availableSeats.RemoveAll(seat => seat.Visitors != null);
+        availableSeats.First().Visitors = remainingVisitors.First();
+        remainingVisitors.RemoveAt(0);
 
-        return group;
+        // availableSeats = GetSeats().Where(seat => seat.SeatRow != 1).OrderBy(seat => seat.SeatRow).ToList();
+        
+        List<Visitor> unableToPlace = new List<Visitor>();
+        
+        unableToPlace.AddRange(remainingVisitors);
+
+        return new Group(group.Id, date, unableToPlace);
     }
 }

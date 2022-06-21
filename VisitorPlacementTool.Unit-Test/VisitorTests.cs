@@ -8,7 +8,7 @@ public class VisitorTests
     private readonly Visitor _sut;
     public VisitorTests()
     {
-        _sut = new Visitor();
+        // _sut = new Visitor();
     }
     
     

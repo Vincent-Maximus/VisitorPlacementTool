@@ -21,8 +21,50 @@ public class Organizer
         _events = events;
     }
     
-    //TODO Get Events
-    //TODO Get Event by ID 
     
-    //TODO Create Events
+    //Get Event by ID
+    public Event? GetEventById(Guid id)
+    {
+        return _events!.FirstOrDefault(event_ => event_.Id == id);
+    }
+
+    //Get Visitor by ID 
+    public Visitor? GetVisitorById(Guid id)
+    {
+        return _visitors!.FirstOrDefault(visitor_ => visitor_.Id == id);
+    }
+
+    
+    //Create Events
+    public Event AddEvent(string Name, int VisitorLimit, DateOnly dateTime)
+    {
+        //validation
+        if (_events!.Any(_events => _events.Name == Name))
+        {
+            throw new ArgumentException(nameof(Event), "Dit evenement is al toegevoerd.");
+        }
+
+        // Guid id, string name, DateOnly date)
+        Event addedEvent = new Event(new Guid(), Name, VisitorLimit, dateTime);
+        _events!.Add(addedEvent);
+
+        return addedEvent;
+    }
+    
+    //Create Visitor
+    public Guid AddVisitor(string Name, DateOnly dateTime)
+    {
+        //validation
+        if (_visitors!.Any(_visitors => _visitors.Name == Name))
+        {
+            throw new ArgumentException(nameof(Event), "Deze persoon is al toegevoerd");
+        }
+
+        // Guid id, string name, DateOnly birthday)
+        Visitor addedvisitor = new Visitor(new Guid(), Name, dateTime);
+        _visitors!.Add(addedvisitor);
+
+        return addedvisitor.Id;
+    }
+
 }
