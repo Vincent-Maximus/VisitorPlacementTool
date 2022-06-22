@@ -110,7 +110,6 @@ public class Event
             throw new ArgumentException(nameof(Event), "Er moet minimaal 1 volwassene aanwezig zijn");
         }
         
-        Console.WriteLine(group.Visitors.First().Name);
         _assigned.Add(group);
         
         // int areaNr = 0;
@@ -193,7 +192,6 @@ public class Event
                 //place those^ groups in order 
             }
             
-            Console.WriteLine(group.Visitors.Count);
             if (pendingGroup.Visitors.Count > 0) 
             {
                 throw new ArgumentException(nameof(Event), "Deze groep pas helaas niet");
@@ -204,7 +202,6 @@ public class Event
             }
             else
             {
-                Console.WriteLine(group.Visitors.Count);
                 _groups.Add(group);
             }
             

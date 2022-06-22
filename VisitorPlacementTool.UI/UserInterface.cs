@@ -54,21 +54,6 @@ public class UserInterface
             }
         }
 
-
-        TreeNode accessDeniedNode = tree.AddNode("[red] Access Denied [/]");
-
-        foreach (Group group in _event.Groups)
-        {
-            TreeNode groupNode = accessDeniedNode.AddNode($"groep {group.Id} (Geregistreert op: {group.RegisterTime})");
-
-            foreach (Visitor visitor in group.Visitors)
-            {
-                groupNode.AddNode(
-                    $"{visitor.Name} ({(visitor.ChildCheck(_event.Date) ? "Volwassenen" : "Kind")}, Verjaardag: {visitor.Birthday})");
-            }
-        }
-
-
         AnsiConsole.WriteLine();
         AnsiConsole.Write(tree);
     }
