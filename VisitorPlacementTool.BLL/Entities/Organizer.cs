@@ -4,7 +4,7 @@ namespace VisitorPlacementTool.BLL.Entities
 {
     public class Organizer
     {
-        [Key] public Guid Id { get; init; } = Guid.NewGuid();
+        [Key] public Guid Id { get; private set; } = Guid.NewGuid();
         public string? Name { get; private set; }
 
         private readonly List<Visitor>? _visitors = new List<Visitor>();

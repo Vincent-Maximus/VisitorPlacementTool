@@ -6,7 +6,7 @@ namespace VisitorPlacementTool.BLL.Entities;
 
 public class Event
 {
-    [Key] public Guid Id { get; init; } = Guid.NewGuid();
+    [Key] public Guid Id { get; private set; } = Guid.NewGuid();
     public string? Name { get; private set; }
     public int VisitorLimit { get; private set; }
     public DateOnly Date { get; private set; }

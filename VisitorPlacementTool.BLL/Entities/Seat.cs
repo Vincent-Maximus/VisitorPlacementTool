@@ -4,7 +4,7 @@ namespace VisitorPlacementTool.BLL.Entities
 {
     public class Seat
     {
-        [Key] public Guid Id { get; init; } = Guid.NewGuid();
+        [Key] public Guid Id { get; private set; } = Guid.NewGuid();
         public int SeatNr { get; private set; }
         public int SeatRow { get; private set; }
         public bool Occupied { get; private set; }

@@ -5,7 +5,7 @@ namespace VisitorPlacementTool.BLL.Entities;
 
 public class Area
 {
-    [Key] public Guid Id { get; init; } = Guid.NewGuid();
+    [Key] public Guid Id { get; private set; } = Guid.NewGuid();
     public char AreaNr { get; private set; }
     public int RowLength { get; private set; }
     public int RowNr { get; private set; }
