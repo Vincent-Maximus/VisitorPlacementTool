@@ -1,0 +1,12 @@
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/bin/Debug/net6.0/VisitorPlacementTool.BLL.deps.json
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/bin/Debug/net6.0/VisitorPlacementTool.BLL.dll
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/bin/Debug/net6.0/VisitorPlacementTool.BLL.pdb
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/VisitorPlacementTool.BLL.csproj.AssemblyReference.cache
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/VisitorPlacementTool.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/VisitorPlacementTool.BLL.AssemblyInfoInputs.cache
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/VisitorPlacementTool.BLL.AssemblyInfo.cs
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/VisitorPlacementTool.BLL.csproj.CoreCompileInputs.cache
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/VisitorPlacementTool.BLL.dll
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/refint/VisitorPlacementTool.BLL.dll
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/VisitorPlacementTool.BLL.pdb
+/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/Debug/net6.0/ref/VisitorPlacementTool.BLL.dll

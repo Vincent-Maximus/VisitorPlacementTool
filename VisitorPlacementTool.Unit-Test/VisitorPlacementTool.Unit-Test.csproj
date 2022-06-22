@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\VisitorPlacementTool\VisitorPlacementTool.csproj" />
+      <ProjectReference Include="..\VisitorPlacementToolyrmom\VisitorPlacementToolyrmom.csproj" />
     </ItemGroup>
 
 </Project>

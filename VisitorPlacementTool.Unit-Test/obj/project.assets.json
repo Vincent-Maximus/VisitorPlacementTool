@@ -630,6 +630,15 @@
           }
         }
       },
+      "Spectre.Console/0.44.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1661,14 +1670,28 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "VisitorPlacementTool/1.0.0": {
+      "VisitorPlacementTool.BLL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/VisitorPlacementTool.dll": {}
+          "bin/placeholder/VisitorPlacementTool.BLL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/VisitorPlacementTool.dll": {}
+          "bin/placeholder/VisitorPlacementTool.BLL.dll": {}
+        }
+      },
+      "VisitorPlacementToolyrmom/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Spectre.Console": "0.44.0",
+          "VisitorPlacementTool.BLL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VisitorPlacementToolyrmom.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VisitorPlacementToolyrmom.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -3000,6 +3023,24 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Spectre.Console/0.44.0": {
+      "sha512": "QMpKtn5QV1j2nklqDwuRE/XwbDn5jxww+Mt5J6Jn3EeQIzaLcuLyUhCLh/mS8giN6uXbqOV1ep5HlUGxrV1ujQ==",
+      "type": "package",
+      "path": "spectre.console/0.44.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Spectre.Console.dll",
+        "lib/net5.0/Spectre.Console.xml",
+        "lib/net6.0/Spectre.Console.dll",
+        "lib/net6.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "small-logo.png",
+        "spectre.console.0.44.0.nupkg.sha512",
+        "spectre.console.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -6211,10 +6252,15 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "VisitorPlacementTool/1.0.0": {
+    "VisitorPlacementTool.BLL/1.0.0": {
       "type": "project",
-      "path": "../VisitorPlacementTool/VisitorPlacementTool.csproj",
-      "msbuildProject": "../VisitorPlacementTool/VisitorPlacementTool.csproj"
+      "path": "../VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj",
+      "msbuildProject": "../VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj"
+    },
+    "VisitorPlacementToolyrmom/1.0.0": {
+      "type": "project",
+      "path": "../VisitorPlacementToolyrmom/VisitorPlacementToolyrmom.csproj",
+      "msbuildProject": "../VisitorPlacementToolyrmom/VisitorPlacementToolyrmom.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6222,7 +6268,7 @@
       "MSTest.TestAdapter >= 2.2.8",
       "MSTest.TestFramework >= 2.2.8",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
-      "VisitorPlacementTool >= 1.0.0",
+      "VisitorPlacementToolyrmom >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -6251,8 +6297,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool/VisitorPlacementTool.csproj": {
-              "projectPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool/VisitorPlacementTool.csproj"
+            "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementToolyrmom/VisitorPlacementToolyrmom.csproj": {
+              "projectPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementToolyrmom/VisitorPlacementToolyrmom.csproj"
             }
           }
         }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aTDFM038MHFjknxMtMT6U0vJs7bMWijKnhk7Zrogrg9fylmf/l1HoDOSAEmTLFjxuNyDRQju5MsGmhNO6VGJEQ==",
+  "dgSpecHash": "3nafQg30R6Hgf0SDEoPtrPmaTqDa86A/tjQK87LX3xbODsHlVH9XiNkfaeYmunYL79aSd5bHtebDUMtOl7+SUQ==",
   "success": true,
   "projectFilePath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.Unit-Test/VisitorPlacementTool.Unit-Test.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "/Users/vincentmaximus/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/vincentmaximus/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/vincentmaximus/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "/Users/vincentmaximus/.nuget/packages/spectre.console/0.44.0/spectre.console.0.44.0.nupkg.sha512",
     "/Users/vincentmaximus/.nuget/packages/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg.sha512",
     "/Users/vincentmaximus/.nuget/packages/system.buffers/4.3.0/system.buffers.4.3.0.nupkg.sha512",
     "/Users/vincentmaximus/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",

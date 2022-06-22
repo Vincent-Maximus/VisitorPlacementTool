@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eQVVOP0XKIWpPZPfZpi7QuxFXQch068tuxtkLIdohlBRncQ+1SQ7B4IP99NZXLtuDc+WP4z69S5KGxjPaZSbmQ==",
+  "success": true,
+  "projectFilePath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.UI/VisitorPlacementTool.UI.csproj",
+  "expectedPackageFiles": [
+    "/Users/vincentmaximus/.nuget/packages/spectre.console/0.44.0/spectre.console.0.44.0.nupkg.sha512"
+  ],
+  "logs": []
+}

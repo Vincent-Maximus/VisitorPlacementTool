@@ -1,11 +1,13 @@
-using VisitorPlacementTool.Entities;
+// using VisitorPlacementTool..Entities;
+
+using VisitorPlacementTool.BLL.Entities;
 
 namespace VisitorPlacementTool.Unit_Test;
 
 [TestClass]
 public class VisitorTests
 {
-    private readonly Visitor _sut;
+    // private readonly Visitor _sut;
     public VisitorTests()
     {
         // _sut = new Visitor();
@@ -16,32 +18,62 @@ public class VisitorTests
     [TestMethod]
     public void ChildCheck_ShouldReturnTrue()
     {
-        //This is an child
         // Dummy Data
-        var child = new DateOnly(2020, 10, 19);
-        var adult = new DateOnly(2000, 10, 19);
+        
+        //This is an Adult
+        string Birthdaystr = "01/10/2000";
+        string currentDateString = "02/5/2022";
+
+        if (!DateOnly.TryParse(Birthdaystr, out DateOnly BirthdayResult)) Assert.Fail("Could not parse birthday");
+        if (!DateOnly.TryParse(currentDateString, out DateOnly currentDateResult)) Assert.Fail("Could not parse current date");
+
+        Visitor visitor = new Visitor("Name", BirthdayResult); 
         
         //Run
-        var isChild = _sut.ChildCheck(child);
+        bool isAdult = visitor.ChildCheck(currentDateResult);
 
         //Test
-        Assert.IsTrue(isChild);
+        Assert.IsTrue(isAdult);
     }
     
-    
-    //The tests xD
     [TestMethod]
     public void ChildCheck_ShouldReturnFalse()
     {
-        //This is an adult
         // Dummy Data
-        var child = new DateOnly(2020, 10, 19);
-        var adult = new DateOnly(2000, 10, 19);
+        
+        //This is an Adult
+        string Birthdaystr = "01/10/2020";
+        string currentDateString = "02/5/2022";
+
+        if (!DateOnly.TryParse(Birthdaystr, out DateOnly BirthdayResult)) Assert.Fail("Could not parse birthday");
+        if (!DateOnly.TryParse(currentDateString, out DateOnly currentDateResult)) Assert.Fail("Could not parse current date");
+
+        Visitor visitor = new Visitor("Name", BirthdayResult); 
         
         //Run
-        var isChild = _sut.ChildCheck(adult);
+        bool isAdult = visitor.ChildCheck(currentDateResult);
 
         //Test
-        Assert.IsFalse(isChild);
+        Assert.IsFalse(isAdult);
+    }
+    [TestMethod]
+    public void ChildCheck_ShouldReturnTrue_SameDay()
+    {
+        // Dummy Data
+        
+        //This is an Adult
+        string Birthdaystr = "02/05/2010";
+        string currentDateString = "02/05/2022";
+
+        if (!DateOnly.TryParse(Birthdaystr, out DateOnly BirthdayResult)) Assert.Fail("Could not parse birthday");
+        if (!DateOnly.TryParse(currentDateString, out DateOnly currentDateResult)) Assert.Fail("Could not parse current date");
+
+        Visitor visitor = new Visitor("Name", BirthdayResult); 
+        
+        //Run
+        bool isAdult = visitor.ChildCheck(currentDateResult);
+
+        //Test
+        Assert.IsTrue(isAdult);
     }
 }

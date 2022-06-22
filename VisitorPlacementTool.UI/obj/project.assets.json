@@ -1,0 +1,125 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Spectre.Console/0.44.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        }
+      },
+      "VisitorPlacementTool.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/VisitorPlacementTool.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VisitorPlacementTool.BLL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Spectre.Console/0.44.0": {
+      "sha512": "QMpKtn5QV1j2nklqDwuRE/XwbDn5jxww+Mt5J6Jn3EeQIzaLcuLyUhCLh/mS8giN6uXbqOV1ep5HlUGxrV1ujQ==",
+      "type": "package",
+      "path": "spectre.console/0.44.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Spectre.Console.dll",
+        "lib/net5.0/Spectre.Console.xml",
+        "lib/net6.0/Spectre.Console.dll",
+        "lib/net6.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "small-logo.png",
+        "spectre.console.0.44.0.nupkg.sha512",
+        "spectre.console.nuspec"
+      ]
+    },
+    "VisitorPlacementTool.BLL/1.0.0": {
+      "type": "project",
+      "path": "../VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj",
+      "msbuildProject": "../VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Spectre.Console >= 0.44.0",
+      "VisitorPlacementTool.BLL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/vincentmaximus/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.UI/VisitorPlacementTool.UI.csproj",
+      "projectName": "VisitorPlacementTool.UI",
+      "projectPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.UI/VisitorPlacementTool.UI.csproj",
+      "packagesPath": "/Users/vincentmaximus/.nuget/packages/",
+      "outputPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.UI/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/vincentmaximus/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj": {
+              "projectPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Spectre.Console": {
+            "target": "Package",
+            "version": "[0.44.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj": {}
+  },
+  "projects": {
+    "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj",
+        "projectName": "VisitorPlacementTool.BLL",
+        "projectPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/VisitorPlacementTool.BLL.csproj",
+        "packagesPath": "/Users/vincentmaximus/.nuget/packages/",
+        "outputPath": "/Users/vincentmaximus/RiderProjects/VisitorPlacementTool/VisitorPlacementTool.BLL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vincentmaximus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
