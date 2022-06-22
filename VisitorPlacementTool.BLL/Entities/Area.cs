@@ -9,7 +9,7 @@ public class Area
     public char AreaNr { get; private set; }
     public int RowLength { get; private set; }
     public int RowNr { get; private set; }
-
+// SOLID
     //interface segregation
     private readonly List<Seat>? _seats = new List<Seat>();
     public IReadOnlyList<Seat>? Seats => _seats.AsReadOnly();
